@@ -34,23 +34,6 @@ function rootReducer(state = initialState, action) {
             return Object.assign({}, state, {
                 visibilityFilter: action.filter
             });
-
-            /*switch(action.filter){
-                case 'SHOW_ALL':
-                    return state.cards;
-                    break;
-
-                case 'SHOW_VISIBLE':
-
-                    break;
-
-                case 'SHOW_NOT_VISIBLE':
-
-                    break;
-
-                default:
-                    break;
-            }*/
     
         default:
             return state;
